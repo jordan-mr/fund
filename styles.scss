@@ -221,6 +221,10 @@ footer{
     padding: 0 20%;
     background-color: $grey1;
     text-align: center;
+
+    h1{
+      font-size:7vw !important;
+    }
   }
    
   img{
@@ -295,7 +299,7 @@ footer{
     margin: auto;
   
     h2{
-      font-size:40px;
+      font-size:7vw !important;
     }
   }
 
@@ -335,13 +339,13 @@ footer{
     background-color: $grey2;
     text-align: center;
     color: #fff;
-    padding-top:10px;
+    padding-top:4vw;
     border-radius: 20px;
     
     p{
       display: inline-block;
       margin: 0 10px;
-      font-size: calc((100vw / 10) / 4);
+      font-size: 4vw;
     }
     #review-text-container{
       display: inline-block;
@@ -349,7 +353,11 @@ footer{
       min-height:50px;
       vertical-align: middle;
     }
+    
    
+  }
+  h2{
+    font-size:7vw !important;
   }
   }
   
