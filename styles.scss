@@ -9,12 +9,12 @@ body{
   font-family: 'Open Sans', 'Roboto', sans-serif;
   background-color: $grey1;
   box-sizing: border-box;
-  overflow-x: hidden;
+  //overflow-x: hidden;
   position: absolute;
  
 }
 .wrapper{
-  overflow-x: hidden !important;
+  //overflow-x: hidden !important;
 }
 
 nav{
