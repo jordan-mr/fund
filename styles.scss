@@ -1,0 +1,353 @@
+$green1: #25A032;
+$green2: rgb(30, 131, 40);
+$grey1: rgb(245, 245, 245);
+$grey2: #757575;
+html{
+  overscroll-behavior-x: hidden;
+}
+body{
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  background-color: $grey1;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: absolute;
+ 
+}
+.wrapper{
+  overflow-x: hidden !important;
+}
+
+nav{
+  top:0;
+  left:0;
+  width:100vw;
+  background-color: #fff;
+  position: fixed;
+  height: 55px;
+  border-top: $green1 solid 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.281);
+  z-index: 2;
+
+  ul{
+    margin:0px;
+    padding-top:10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+
+    #logo{
+      margin-top: -5px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size:200%;
+      color: $green1;
+    }
+
+    button{
+      background-color: $grey2;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 20px;
+      border:none;
+      #sign-in{
+        color:#fff;
+      }
+      &:hover{
+        background-color: #444;
+      }   
+    }
+
+    a{
+      text-decoration: none;
+      color:$green1;
+    }
+  }
+}
+//main content
+.container{
+
+  margin: auto;
+  margin-top: 80px;
+  width:100vw;
+  left: 0;
+  position: absolute;
+  background-color: $grey1;
+
+  .page{
+    width:90vw;
+    margin: auto;
+    background-color: $grey1;
+  }
+  #get-started{
+    width:100%;
+    padding: 0 20%;
+    background-color: $grey1;
+    
+  }
+  
+  img{
+    width:20%;
+    border-radius: 20px;
+    float: left;
+  }
+
+  .main-text{
+    float: left;
+    width:40%;
+
+
+    button{ //GET STARTED BUTTON
+      height: 60px;
+      width:400px;
+      color:#fff;
+      background-color: $green1;
+      font-size: 200%;
+      font-weight: 400;
+      border: none;
+      border-radius: 5px;
+
+      &:hover{
+        background-color: $green2;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #info{
+
+    background-color: #fff;
+    height:400px;
+    padding-top:100px;
+    text-align: center;
+    width:100%;
+    
+
+    .boxes{
+      background-color: $grey2;
+      width:500px;
+      height: 280px;
+      margin: auto 20px;
+      display: inline-flex;  
+      text-align: center;
+
+      .b-text{
+        cursor: pointer;
+      } 
+
+      h2{
+        margin: 0;
+        margin: 50px auto;
+        color:white;
+      }
+    }
+
+  }
+
+}
+#invest{
+  text-align: center;
+  height: 600px;
+  width:80%;
+  margin: auto;
+
+  h2{
+    font-size:40px;
+  }
+}
+#canvas-holder{
+  width:49%;
+}
+
+#canvas-text-holder{
+  width:49%;
+  background-color: rgba(255, 255, 255, 0.438);
+}
+.chart-text{
+  width:100%;
+  display: inline-flex;
+}
+#chart-text-para{
+  padding: 40px 70px;
+}
+
+.reviews{
+  padding-top: 150px;
+  height: 300px;
+  text-align: center;
+
+  #left-arrow, #right-arrow{
+    cursor: pointer;
+  }
+
+  .slider-container{
+    margin: auto;
+    width:500px;
+    height: 150px;
+  background-color: $grey2;
+  text-align: center;
+  color: #fff;
+  padding-top:50px;
+  border-radius: 20px;
+  
+  p{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+  }
+  #review-text-container{
+    display: inline-block;
+    width:300px;
+    min-height:100px;
+    vertical-align: middle;
+  }
+ 
+}
+}
+
+footer{
+
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px){
+   //get started bit
+   #get-started{
+    width:100%;
+    padding: 0 20%;
+    background-color: $grey1;
+    text-align: center;
+  }
+   
+  img{
+    margin: 20px 10%;
+    width:200px;
+    border-radius: 20px;
+    clear: both;
+    width:40% !important;
+
+  }
+
+  .main-text{
+    clear: both;
+    width:60% !important;
+
+
+    button{ //GET STARTED BUTTON
+      height: 60px;
+      width:100% !important;
+      color:#fff;
+      background-color: $green1;
+      font-size: 200%;
+      font-weight: 400;
+      border: none;
+      border-radius: 5px;
+
+      &:hover{
+        background-color: $green2;
+        cursor: pointer;
+      }
+    }
+  }
+
+  //boxes
+  #info{
+    padding-bottom: 50px !important;
+    background-color: #fff;
+    height:auto !important;
+    padding-top:50px !important;
+    text-align: center;
+    width:100%;
+    
+
+    .boxes{
+      background-color: $grey2;
+      width:60% !important;
+      height: 280px;
+      margin: 20px 20px !important;
+      display: inline-flex;  
+      text-align: center;
+
+      .b-text{
+        cursor: pointer;
+      } 
+
+      h2{
+        font-size:100%;
+        margin: 0;
+        margin: 50px auto;
+        padding: 20px 50px;
+        color:white;
+      }
+    }
+
+  }
+
+  ///chart
+  #invest{
+    text-align: center;
+    height: auto;
+    width:80%;
+    margin: auto;
+  
+    h2{
+      font-size:40px;
+    }
+  }
+
+
+  #canvas-holder{
+    width:100%;
+  }
+  
+  #canvas-text-holder{
+    width: 100% !important;
+    background-color: rgba(255, 255, 255, 0.438);
+  }
+  .chart-text{
+    width:100% !important;
+    display: block !important;
+  }
+  #chart-text-para{
+    padding: 40px 70px;
+    font-size: 70%;
+  }
+
+  //review
+  .reviews{
+    padding-top: 30px;
+    height: auto !important;
+    text-align: center;
+  
+    #left-arrow, #right-arrow{
+      cursor: pointer;
+      display: none;
+    }
+  
+    .slider-container{
+      margin: auto;
+      width:auto;
+      height: auto;
+    background-color: $grey2;
+    text-align: center;
+    color: #fff;
+    padding-top:10px;
+    border-radius: 20px;
+    
+    p{
+      display: inline-block;
+      margin: 0 10px;
+      font-size: calc((100vw / 10) / 4);
+    }
+    #review-text-container{
+      display: inline-block;
+      width:300px;
+      min-height:50px;
+      vertical-align: middle;
+    }
+   
+  }
+  }
+  
+
+}
