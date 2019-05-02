@@ -1,15 +1,15 @@
 html {
-  overscroll-behavior-x: hidden; }
+  overscroll-behavior-x: hidden;
+  padding: 0;
+  margin: 0; }
 
 body {
   font-family: 'Open Sans', 'Roboto', sans-serif;
   background-color: whitesmoke;
   box-sizing: border-box;
-  overflow-x: hidden;
-  position: absolute; }
-
-.wrapper {
-  overflow-x: hidden !important; }
+  position: absolute;
+  padding: 0;
+  margin: 0; }
 
 nav {
   top: 0;
